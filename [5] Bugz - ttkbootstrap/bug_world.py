@@ -7,6 +7,11 @@ from actor import NORTH, EAST, SOUTH, WEST
 from bug import Bug
 from flower import Flower
 from rock import Rock
+from spinner_bug import SpinnerBug
+from bouncer_bug import BouncerBug
+from tired_bug import TiredBug
+from dying_bug import DyingBug
+
 
 
 class BugWorld(World):
@@ -29,13 +34,15 @@ class BugWorld(World):
         
         '''
         # Use the command below to add actors 1 at at time
-        #self.add(Bug(), 0, 0, NORTH)
+        self.add(DyingBug(max_steps=5), 5, 5, NORTH)
+        self.add(Bug(),8, 8, SOUTH)
         
         # Add multiple actors
-        self.add_multiple_actors([
-            (Bug(), 0, 0, SOUTH),
-            (Bug(), 5, 5, NORTH)
-            ])
+#         self.add_multiple_actors([
+#             (Bug(), 0, 0, SOUTH),
+#             (Bug(), 5, 5, NORTH)
+#             ])
+
         
         # Add actors randomly
         self.add_random_actors(num_rocks = 10,

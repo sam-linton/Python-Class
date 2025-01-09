@@ -130,6 +130,26 @@ class World(ttk.Canvas):
         '''
         return self.jmax
     
+    # TODO
+    def get_next_coords(self, coords: tuple[int, int], direction: int) -> tuple[int, int]:
+        '''
+        Return the coordinates in the specified direction
+        relative to the supplied coordinates
+        '''
+        i, j = coords
+        if direction == NORTH:
+            j-=1
+        elif direction == SOUTH:
+            j+=1
+        elif direction == WEST:
+            i-=1
+        elif direction == EAST:
+            i+=1
+        else:
+            error('Bad direction value in get_next_coords')
+        
+        return (i, j)
+    
     def add(self, actor: Actor, i: int, j: int, direction: int) -> bool:
         '''
         Add an actor to this world at the provided coordinates.

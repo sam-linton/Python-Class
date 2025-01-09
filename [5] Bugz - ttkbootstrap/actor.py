@@ -83,6 +83,12 @@ class Actor:
         Return j
         '''
         return self.j
+    
+    def get_direction(self) -> int:
+        '''
+        Return direction
+        '''
+        return self.direction
             
     def get_next_i(self) -> int:
         '''
@@ -184,4 +190,7 @@ class Actor:
         Remove self from the world
         
         '''
-        self.world = None
+        if self.world == None:
+            return
+#         self.world = None
+        self.world.remove(self)
