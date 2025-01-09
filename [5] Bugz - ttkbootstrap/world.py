@@ -130,7 +130,6 @@ class World(ttk.Canvas):
         '''
         return self.jmax
     
-    # TODO
     def get_next_coords(self, coords: tuple[int, int], direction: int) -> tuple[int, int]:
         '''
         Return the coordinates in the specified direction
