@@ -192,5 +192,4 @@ class Actor:
         '''
         if self.world == None:
             return
-#         self.world = None
         self.world.remove(self)

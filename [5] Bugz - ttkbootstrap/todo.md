@@ -12,3 +12,4 @@ Testing
 -------
 Add unit tests?
 Each class has its own test, using a singleton
+Move solutions to a separate folder
