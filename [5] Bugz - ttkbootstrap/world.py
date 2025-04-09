@@ -197,7 +197,7 @@ class World(ttk.Canvas):
         '''
         return self.__in_bounds(i, j) and (i, j) not in self.actors_dict
      
-    def get_actor(self, i: int, j: int) -> Actor | None:
+    def get_actor(self, i: int, j: int):
         '''
         Get the actor at the provided coordinates (or None)
         
