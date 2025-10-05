@@ -17,7 +17,7 @@ def main():
     wagon_height = 50
     wagon_x = 50
     wagon_y = 50
-    wheel_radius = 5
+    wheel_radius = 25
 
     draw_body(canvas, wagon_x, wagon_y, wagon_length, wagon_height)
     
