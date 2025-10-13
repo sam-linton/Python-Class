@@ -28,19 +28,13 @@ class BugWorld(World):
         Add actors to this world. Change this to add desired actors.
         
         '''
-        # Use the command below to add actors 1 at at time
-        self.add(Bug(),8, 8, SOUTH)
-        
-        # Add multiple actors
-#         self.add_multiple_actors([
-#             (Bug(), 0, 0, SOUTH),
-#             (Bug(), 5, 5, NORTH)
-#             ])
-
         
         # Add actors randomly
         self.add_random_actors(num_rocks = 10,
                                num_flowers = 20,
                                num_bugs = 0)
         
-
+        # Add your own bug by replacing this command
+        # Make sure to add any needed import commands at the top of this file
+        self.add(Bug(),8, 8, SOUTH)
+        
