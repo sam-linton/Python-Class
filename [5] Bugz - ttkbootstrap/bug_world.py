@@ -7,11 +7,6 @@ from actor import NORTH, EAST, SOUTH, WEST
 from bug import Bug
 from flower import Flower
 from rock import Rock
-from spinner_bug import SpinnerBug
-from bouncer_bug import BouncerBug
-from tired_bug import TiredBug
-from dying_bug import DyingBug
-
 
 
 class BugWorld(World):
@@ -34,7 +29,6 @@ class BugWorld(World):
         
         '''
         # Use the command below to add actors 1 at at time
-        self.add(DyingBug(max_steps=5), 5, 5, NORTH)
         self.add(Bug(),8, 8, SOUTH)
         
         # Add multiple actors
