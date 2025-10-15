@@ -34,7 +34,13 @@ class BugWorld(World):
                                num_flowers = 20,
                                num_bugs = 0)
         
-        # Add your own bug by replacing this command
+        
+        self.replace_ok = True
+
+        # Add your own bug(s) by replacing this command
         # Make sure to add any needed import commands at the top of this file
         self.add(Bug(),8, 8, SOUTH)
+
+
+        self.replace_ok = False
         
