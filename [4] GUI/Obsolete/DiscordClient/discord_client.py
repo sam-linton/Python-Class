@@ -11,7 +11,7 @@ class DiscordClient(ttk.Window):
     def __init__(self)-> None:
         """ Initialize the Discord Client application."""
         super().__init__(themename="darkly")
-        self.geometry("400x600")
+        self.geometry("800x1000")
         self.title("Discord Client")
         
         # Messag History Display
