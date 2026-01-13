@@ -3,7 +3,7 @@
 #
 #
 # import tkinter as tk
-import ttkbootstrap as ttk
+# import ttkbootstrap as ttk
 
 class AppState:
     '''

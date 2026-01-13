@@ -28,3 +28,7 @@ class App(ttk.Window):
         self.control_panel.pack(side = 'left', fill = 'both')
         
         self.mainloop()
+        
+        
+if __name__ == '__main__':
+    App()
